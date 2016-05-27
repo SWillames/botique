@@ -1,0 +1,13 @@
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/repository/ClienteRepository.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/uil/JPAUtil.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/controller/MercadoriaBean.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/controller/MarcaBean.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/repository/MarcaRepository.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/repository/MercadoriaRepository.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/tests/CriarTabelas.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/model/Cliente.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/model/Marca.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/controller/ClienteBean.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/bean/util/JsfUtil.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/model/Mercadoria.java
+/home/sergio/NetBeansProjects/Botique/src/main/java/com/novesolucoes/botique/tests/TestaInsereCliente.java
