@@ -9,7 +9,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class Mercadoria_ {
 
 	public static volatile SingularAttribute<Mercadoria, Float> preco;
-	public static volatile SingularAttribute<Mercadoria, Marca> marca;
+	public static volatile SingularAttribute<Mercadoria, String> marca;
 	public static volatile SingularAttribute<Mercadoria, String> indetificaMercadoria;
 	public static volatile SingularAttribute<Mercadoria, Long> id;
 

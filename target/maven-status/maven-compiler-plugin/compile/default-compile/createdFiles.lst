@@ -1,0 +1,16 @@
+com/novesolucoes/botique/tests/CriarTabelas.class
+com/novesolucoes/botique/tests/TestaInsereCliente.class
+com/novesolucoes/botique/controller/ClienteBean.class
+com/novesolucoes/botique/model/Mercadoria.class
+com/novesolucoes/botique/bean/util/JsfUtil$PersistAction.class
+com/novesolucoes/botique/controller/MercadoriaBean.class
+com/novesolucoes/botique/repository/ClienteRepository.class
+com/novesolucoes/botique/uil/JPAUtil.class
+com/novesolucoes/botique/controller/MarcaBean.class
+com/novesolucoes/botique/bean/util/JsfUtil.class
+com/novesolucoes/botique/model/Mercadoria_.class
+com/novesolucoes/botique/repository/MercadoriaRepository.class
+com/novesolucoes/botique/repository/MarcaRepository.class
+com/novesolucoes/botique/model/Cliente_.class
+com/novesolucoes/botique/model/Cliente.class
+com/novesolucoes/botique/model/Marca.class

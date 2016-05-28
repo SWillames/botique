@@ -1,14 +1,95 @@
-<?xml version='1.0' encoding='UTF-8' ?>
+<?xml version='1.0' encoding='UTF-8' ?> 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
+
     <h:head>
-        <title>Facelet Title</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="resources/css/bootstrap.css" rel="stylesheet"/>
+        <!--<link href="resources/css/estilos.css" rel="stylesheet"/>-->
+        <title>Facelets Template</title>
     </h:head>
+
     <h:body>
-        Hello from Facelets
-        <br />
-        <h:link outcome="welcomePrimefaces" value="Página de boas-vindas do Primefaces" />
+
+
+        <div class="container-fluid">
+            
+                <center><h1> MENU</h1></center>
+
+                <div class="col-md-4">
+                    <div class="h-service">
+                        <div class="icon-wrap ico-bg round-fifty wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+                            <i class="fa fa-question"> </i>
+                        </div>
+                        <div class="h-service-content wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;" data-wow-animation-name="fadeInUp">
+                            <center><h3> Cadastrar Cliente </h3></center>
+                            <p><center><img src="img/img1.png" class="img-responsive" border="0"/></center></p>
+                            <br/>
+                            <center><p><a class="btn btn-primary btn-lg" href="cadastraclientes.xhtml" role="button">Clique  Aqui</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-service">
+                        <div class="icon-wrap ico-bg round-fifty wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+                            <i class="fa fa-h-square"> </i>
+                        </div>
+                        <div class="h-service-content wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;" data-wow-animation-name="fadeInUp">
+                            <center><h3> Cadastrar Produto </h3></center>
+                            <p><center><img src="img/img2.png" class="img-responsive" border="0"/></center></p>
+                            <br/>
+                            <center><p><a class="btn btn-primary btn-lg" href="cadastrarmercadorias.xhtml" role="button">Clique  Aqui</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="h-service">
+                        <div class="icon-wrap ico-bg round-fifty wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;" data-wow-animation-name="fadeInDown">
+                            <i class="fa fa-users"> </i>
+                        </div>
+                        <div class="h-service-content wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;" data-wow-animation-name="fadeInUp">
+                            <center><h3> Vendas </h3></center>
+                            <p><center><img src="img/img3.png" class="img-responsive" border="0"/></center></p>
+                            <br/>
+                            <center><p><a class="btn btn-primary btn-lg" href="#" role="button">Clique  Aqui</a></p></center>
+                        </div>
+                    </div>
+                </div>
+                    
+        </div>
+        <div class="container-fluid">
+            <div id="content" class=" container form-signin">
+                
+
+                <ui:insert name="content">Content</ui:insert>
+            </div>   
+        </div>
+
+
+        <!-- Footer -->
+        <footer id="footer">
+            <span class="copyright">&copy; 9Soluções 	 &nbsp; &nbsp; 2016</span>
+        </footer>
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.js"></script>
+        <script src="../assets/js/bootstrap-transition.js"></script>
+        <script src="../assets/js/bootstrap-alert.js"></script>
+        <script src="../assets/js/bootstrap-modal.js"></script>
+        <script src="../assets/js/bootstrap-dropdown.js"></script>
+        <script src="../assets/js/bootstrap-scrollspy.js"></script>
+        <script src="../assets/js/bootstrap-tab.js"></script>
+        <script src="../assets/js/bootstrap-tooltip.js"></script>
+        <script src="../assets/js/bootstrap-popover.js"></script>
+        <script src="../assets/js/bootstrap-button.js"></script>
+        <script src="../assets/js/bootstrap-collapse.js"></script>
+        <script src="../assets/js/bootstrap-carousel.js"></script>
+        <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+
     </h:body>
 </html>
-
