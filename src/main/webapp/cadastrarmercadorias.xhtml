@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./index.xhtml">
+
+            <ui:define name="content">
+                <h:body>
+
+                    <h:form id="frm">
+                        <fieldset>
+                            <legend>
+                                <h2>Cadastro de Mercadorias</h2>
+                            </legend>
+                        </fieldset>    
+                        <p:messages showDetail="false" showSummary="true" />
+                        <p:panelGrid columns="2">
+                            <p:outputLabel value="Nome " for="nome"/>
+                            <p:inputTextarea id="nome" value="#{mercadoriaBean.mercadoria.indetificaMercadoria}"/>
+                            <p:outputLabel value="Marca " for="marca"/>
+                            <p:inputText id="marca" value="#{mercadoriaBean.mercadoria.marca}"/>
+                            <h:outputLabel value="Valor " for="preco"/>
+                            <h:inputText id="preco" value="#{mercadoriaBean.mercadoria.preco}"/>
+
+                        </p:panelGrid>    
+                        <p:commandButton  value="Cadastrar" action="#{mercadoriaBean.salvar()}"/>
+                    </h:form>
+                    
+                    <br clear="all"/>
+                    <!-- LISTAGEM DAS MARCAS CADASTRADAS -->
+
+                    <h:form  styleClass= "lista" prependId="false"
+                             id= "formListaMarca">
+                        <p:growl id="msgs" showDetail="true"/>
+                        <p:dataTable  value= "#{mercadoriaBean.marcaList}"  var="d" id="table" 
+                                      rows= "10" paginatorAlwaysVisible= "true" 
+                                      paginator= "true" 
+                                      paginatorTemplate= "{CurrentPageReport}  
+                                      {FirstPageLink} {PreviousPageLink} {PageLinks}
+                                      {PageLinks} {NextPageLink} {LastPageLink}
+                                      {RowsPerPageDropdown}"
+                                      rowsPerPageTemplate= "5, 10, 20">
+
+                            <f:facet name= "header">
+                                <fieldset>
+                                    <legend>
+                                        <h2>Marcas Cadastradas</h2>
+                                    </legend>
+                                </fieldset>
+                            </f:facet>
+
+                            <p:ajax event="rowEdit" listener="#{mercadoriaBean.onRowEdit}" update=":formListaMarca:msgs"/>
+
+
+                            <p:column headerText="Nome" sortBy="#{d.identificaMercadoria}" filterBy="#{d.identificaMercadoria}">
+
+                                <h:outputText value="#{d.indetificaMercadoria}" />
+
+
+                            </p:column>
+
+
+                            <p:column style= "width: 10px; text-align: center">
+                                <f:facet name= "header">
+                                    <h:outputLabel value= "Ações"/>
+                                </f:facet>
+
+                                <!--<h:commandLink value= "Alterar" 
+                                               styleClass= "btn_alterar" 
+                                               title= "Alterar" 
+                                               >
+                                    <f:setPropertyActionListener value= "{d}" 
+                                                                 target= "{marcaBean.marca}"/>
+                                </h:commandLink>-->
+
+                                <h:commandButton style="width: 10px"  title="Excluir a Aula Selecionada." image="images/delete.png" action="#{mercadoriaBean.remove()}"
+                                                 alt="Excluir" onclick="if (!confirm('Deseja excluir a Aula?'))
+                                                             return false;"  />
+                            </p:column>
+                            <p:column style="width:32px">
+                                <h:commandButton style="width: 10px"  title="Excluir a Aula Selecionada." image="images/delete.png" action="#{mercadoriaBean.alterar()}"
+                                                 alt="Excluir"  />
+                            </p:column>
+                        </p:dataTable>
+                    </h:form>
+                </h:body>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
